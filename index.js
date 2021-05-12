@@ -45,9 +45,10 @@ function emojify() {
         } else if(!isNaN(char)) { // Check number
             emoji = numbers[char];
 
-        } else {
+        } else if(/[a-z]/g.test(char)) {
             emoji = `regional_indicator_${char}`;
-
+        } else {
+            return;
         }
 
         emojis += `:${emoji}: `;
