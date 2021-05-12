@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
     background-color: #2f3136;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -29,17 +30,19 @@ label {
 
 /* Textarea i/o */
 textarea {
-    width: 60vw;
     height: 12vh;
-    font-size: large;
-    resize: none;
-    outline: 3px solid black;
-    color: whitesmoke;
-    background: #36393f;
-    font-family: 'Roboto', sans-serif;
     width: 50vw;
     max-width: 70rem;
     min-width: 20rem;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+
+    resize: none;
+
+    outline: 3px solid black;
+    color: whitesmoke;
+    background: #36393f;
 }
 
 textarea:focus {
