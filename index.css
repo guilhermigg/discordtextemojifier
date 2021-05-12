@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: #2f3136;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo {
+    text-align: center;
+    color: #7289da;
+    outline: 2px 2px 2px white;
+    width: 50vw;
+    max-width: 30rem;
+    min-width: 20rem;
+}
+
+label {
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+/* Textarea i/o */
+textarea {
+    width: 60vw;
+    height: 12vh;
+    font-size: large;
+    resize: none;
+    outline: 3px solid black;
+    color: whitesmoke;
+    background: #36393f;
+    font-family: 'Roboto', sans-serif;
+    width: 50vw;
+    max-width: 70rem;
+    min-width: 20rem;
+}
+
+textarea:focus {
+    outline: 3px solid #7289da;
+}
+
+/* Botão COPIAR */
+#button-copy {
+    background: #7289da;
+    font-size: larger;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    width: 50vw;
+}
+
+#button-copy:active {
+    border: 1px solid #7289da;
+}
+
+
+small {
+    color: white;
+}
