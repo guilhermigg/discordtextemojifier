@@ -4,4 +4,5 @@
 http://guilhermigg.github.io/discordtextemojifier
 
 Meu Discord: raidzera ツ#0848
+
 _Hospedado com Github Pages_
