@@ -1,4 +1,4 @@
-// Arrays
+// Numbers
 const numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 
 // Special chars
@@ -47,22 +47,15 @@ function emojify() {
     text.split('').forEach(char => {
         let emoji;
 
-        if(char == " " || char == "\n") { //Check space
-            emojis+=char;
-            return;
-        } else if(special[char]) { // Check special
-            emoji = special[char];
-
-        } else if(!isNaN(char)) { // Check number
-            emoji = numbers[char];
-
-        } else if(/[a-z]/g.test(char)) {
-            emoji = `regional_indicator_${char}`;
-        } else {
-            return;
+        switch(true) {
+            case char == " " || char == "\n": emoji = char; break; // Check space or newline
+            case !isNaN(char): emoji = `:${numbers[char]}:` ;break; // if number
+            case /[a-z]/g.test(char): emoji = `:regional_indicator_${char}:`; break; // if letter
+            case special[char] != undefined: emoji = `:${special[char]}:`; break; // if special char
+            default: emoji = char; break;
         }
 
-        emojis += `:${emoji}: `;
+        emojis += ' '+emoji
     })
 
     output.value = emojis;
