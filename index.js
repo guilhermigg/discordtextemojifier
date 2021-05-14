@@ -6,7 +6,7 @@ const special = {
     "#": "hash",
     "*": "asterisk",
     "?": "question",
-    ".": "black_small_square",
+    ".": "white_small_square",
     "$": "heavy_dollar_sign",
     "-": "heavy_minus_sign",
     "!": "exclamation",
@@ -14,7 +14,7 @@ const special = {
     "÷": "heavy_division_sign",
     "~": "wavy_dash",
     "/": "magic_wand",
-    "\\": "ruler"
+    "\\": "ruler",
 }
 
 // Textarea
