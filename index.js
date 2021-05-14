@@ -1,10 +1,20 @@
 // Arrays
 const numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
 
-const special = ["#"," *", "?", ".", "$", "-", "!", "+", "÷", "~", "/"]
-const specialEmoji = ["hash", "asterisk", "question", "black_small_square", "heavy_dollar_sign",
- "heavy_minus_sign", "exclamation", "heavy_plus_sign", "heavy_division_sign", "wavy_dash",
-"magic_wand"]
+// Special chars
+const special = {
+    "#": "hash",
+    "*": "asterisk",
+    "?": "question",
+    ".": "black_small_square",
+    "$": "heavy_dollar_sign",
+    "-": "heavy_minus_sign",
+    "!": "exclamation",
+    "+": "heavy_plus_sign",
+    "÷": "heavy_division_sign",
+    "~": "wavy_dash",
+    "/": "magic_wand",
+}
 
 // Textarea
 const input = document.getElementById('input');
@@ -36,13 +46,11 @@ function emojify() {
     text.split('').forEach(char => {
         let emoji;
 
-        if(char == " ") { //Check space
-            emojis+="  ";
+        if(char == " " || char == "\n") { //Check space
+            emojis+=char;
             return;
-
-        } else if(special.indexOf(char)>-1) { // Check special
-            let index = special.indexOf(char);
-            emoji = specialEmoji[index];
+        } else if(special[char]) { // Check special
+            emoji = special[char];
 
         } else if(!isNaN(char)) { // Check number
             emoji = numbers[char];
