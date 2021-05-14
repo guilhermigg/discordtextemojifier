@@ -14,6 +14,7 @@ const special = {
     "÷": "heavy_division_sign",
     "~": "wavy_dash",
     "/": "magic_wand",
+    "\\": "ruler"
 }
 
 // Textarea
