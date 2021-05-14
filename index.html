@@ -13,14 +13,17 @@
     </div>
 
     <div class="container">
-        <label> Texto: </label>
-        <textarea id="input" oninput="emojify()"></textarea>
-        <small id="input-length">Tamanho: 0</small>
-
-        <label> Emojis: </label>
-        <textarea id="output" readonly></textarea>
-        <small id="output-length">Tamanho: 0</small>
-
+        <div class=card>
+            <label> Texto: </label>
+            <textarea id="input" oninput="emojify()"></textarea>
+            <small id="input-length">Tamanho: 0</small>    
+        </div>
+        <div class=card>
+            <label> Emojis: </label>
+            <textarea id="output" readonly></textarea>
+            <small id="output-length">Tamanho: 0</small>    
+        </div>
+        
         <button id="button-copy" onclick="copyToClipboard()"> Copiar </button>
         <small> by raidzera ツ#0848 </small>
     </div>

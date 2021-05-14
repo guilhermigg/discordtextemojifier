@@ -1,8 +1,8 @@
 // Arrays
 const numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
-const special = ["#"," *", "?", ".", "$", "-", "!"]
+const special = ["#"," *", "?", ".", "$", "-", "!", "+", "÷"]
 const specialEmoji = ["hash", "asterisk", "question", "black_small_square", "heavy_dollar_sign",
- "heavy_minus_sign", "exclamation"]
+ "heavy_minus_sign", "exclamation", "heavy_plus_sign", "heavy_division_sign"]
 
 // Textarea
 const input = document.getElementById('input');
