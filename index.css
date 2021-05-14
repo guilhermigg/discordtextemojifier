@@ -11,17 +11,26 @@ body {
     align-items: center;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 5px;
+}
+
 #logo {
     text-align: center;
     color: #7289da;
     width: 50vw;
     max-width: 30rem;
     min-width: 20rem;
+    margin-top: 10vh;
 }
 
 label {
-    color: white;
-    font-size: 14px;
+    color: #7289da;
+    font-size: 22px;
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: bolder;
@@ -41,14 +50,23 @@ textarea {
 
     resize: none;
 
-    border: 3px solid black;
+    padding: 10px;
+
+    border: 1px solid black;
     color: whitesmoke;
     background: #36393f;
     outline: none;
+    
+}
+
+textarea:hover {
+    border: 1px solid #7289da;
+    transition: 0.5s;
 }
 
 textarea:focus {
     border: 3px solid #7289da;
+    transition: 0.5s;
 }
 
 /* Botão COPIAR */
@@ -59,7 +77,9 @@ textarea:focus {
     border-radius: 20px;
     padding: 10px;
     margin: 20px;
-    width: 40vw;
+    width: 50vw;
+    max-width: 50rem;
+    color:white;
 }
 
 #button-copy:active {
